@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme {
+  --color-ground: var(--bg-ground);
+  --color-abyss: var(--bg-abyss);
+  --color-card: var(--bg-card);
+  --color-elevated: var(--bg-elevated);
+  --color-subtle: var(--border-subtle);
+  --color-border-focus: var(--border-focus);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-ef-violet: var(--ef-violet);
+  --color-ef-violet-hover: var(--ef-violet-hover);
+  --color-ef-violet-deep: var(--ef-violet-deep);
+  --color-ef-violet-light: var(--ef-violet-light);
+  --color-ef-violet-soft: var(--ef-violet-soft);
+
+  --color-btn-sec-bg: var(--btn-secondary-bg);
+  --color-btn-sec-text: var(--btn-secondary-text);
+
+  --color-signal-yes: var(--signal-yes);
+  --color-signal-yes-soft: var(--signal-yes-soft);
+  --color-signal-no: var(--signal-no);
+  --color-signal-no-soft: var(--signal-no-soft);
+  --color-signal-warn: var(--signal-warn);
+  --color-signal-warn-soft: var(--signal-warn-soft);
+  --color-signal-cyan: var(--signal-cyan);
+  --color-signal-cyan-soft: var(--signal-cyan-soft);
+
+  --font-sans: 'PP Neue Montreal', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--bg-ground);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Eliminate 300ms mobile touch delay */
+  button, a, input, select, textarea, [role="button"] {
+    touch-action: manipulation;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-ground);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-subtle);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ef-violet);
+  }
+}
+
+/* Hide scrollbar utility for fluid mobile carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Institutional Card Bevel Highlight (Matching Seer Figma Kit) */
+.seer-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.seer-card:hover {
+  border-color: rgba(125, 51, 255, 0.45);
+}
+
+/* Glass panel effect */
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Radial Glows */
+.violet-glow {
+  background: var(--ef-violet-glow);
+}
+
+/* Button Secondary Style from Figma Image 2 */
+.btn-ef-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.btn-ef-secondary:hover {
+  filter: brightness(1.08);
+}

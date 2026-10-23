@@ -1,0 +1,85 @@
+:root, [data-theme="dark"] {
+  /* EF Core Surfaces (Exact Swatches from Seer EF Figma Board node 118-16652) */
+  --bg-ground: #101013;           /* Page Background */
+  --bg-abyss: #0B0C10;            /* Hero & deep chart canvas */
+  --bg-card: #1A1A1E;             /* Card base */
+  --bg-elevated: #1F1F24;         /* Nested Surface */
+  --bg-glass: rgba(26, 26, 30, 0.88);
+  --border-subtle: #26262E;
+  --border-focus: #7D33FF;
+
+  /* EF Typography Hierarchy (Exact Swatches from Figma Board) */
+  --text-primary: #EDEDF2;        /* Text Primary */
+  --text-secondary: #A8A8B3;      /* Text Secondary */
+  --text-muted: #67676F;          /* Muted labels */
+
+  /* EF Brand Accents & Buttons */
+  --ef-violet: #7D33FF;           /* Button Primary */
+  --ef-violet-hover: #8F55F7;
+  --ef-violet-deep: #6C2BD9;
+  --ef-violet-light: #9C6FF2;
+  --ef-violet-soft: rgba(125, 51, 255, 0.14);
+  --ef-violet-glow: radial-gradient(65% 55% at 50% 0%, rgba(125, 51, 255, 0.28) 0%, rgba(16, 16, 19, 0) 100%);
+
+  /* Button Secondary (Dark) */
+  --btn-secondary-bg: #1F1F24;
+  --btn-secondary-text: #EDEDF2;
+
+  /* Semantic Signal Tokens */
+  --signal-yes: #00F59B;          /* Electric Emerald: Yes / Up / Pass / Low Risk */
+  --signal-yes-soft: rgba(0, 245, 155, 0.14);
+  --signal-no: #FF4D6D;           /* Electric Coral: No / Down / Fail / Critical Risk */
+  --signal-no-soft: rgba(255, 77, 109, 0.14);
+  --signal-warn: #F59E0B;         /* Amber Warning */
+  --signal-warn-soft: rgba(245, 158, 11, 0.14);
+  --signal-cyan: #38BDF8;         /* Forecast Cyan */
+  --signal-cyan-soft: rgba(56, 189, 248, 0.14);
+
+  /* Premium Institutional Glass & Bevel Shadows */
+  --shadow-card: inset 0 1px 0 0 rgba(255, 255, 255, 0.12), inset 0 0 0 1px rgba(156, 111, 242, 0.12), 0 20px 48px -10px rgba(0, 0, 0, 0.85);
+  --shadow-elevated: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 12px 28px -6px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 35px rgba(125, 51, 255, 0.32);
+}
+
+[data-theme="light"] {
+  /* EF Core Surfaces (Exact Swatches from User Uploaded Figma Image 2) */
+  --bg-ground: #F7F7F9;           /* Page Background: F7F7F9 */
+  --bg-abyss: #EFE9FC;            /* Tinted hero & visual depth */
+  --bg-card: #FFFFFF;             /* Card base: FFFFFF */
+  --bg-elevated: #F2EFF9;         /* Nested Surface: F2EFF9 / EFE9FC */
+  --bg-glass: rgba(255, 255, 255, 0.92);
+  --border-subtle: #E2DFEC;
+  --border-focus: #7D33FF;
+
+  /* EF Typography Hierarchy (Exact Swatches from Image 2) */
+  --text-primary: #17171C;        /* Text Primary: 17171C */
+  --text-secondary: #5C5C66;      /* Text Secondary: 5C5C66 */
+  --text-muted: #8E8E99;          /* Muted labels: 8E8E99 */
+
+  /* EF Brand Accents & Buttons (Exact Swatches from Image 2) */
+  --ef-violet: #7D33FF;           /* Button Primary: 7D33FF */
+  --ef-violet-hover: #6C2BD9;
+  --ef-violet-deep: #5B21B6;
+  --ef-violet-light: #9C6FF2;
+  --ef-violet-soft: #EFE9FC;
+  --ef-violet-glow: radial-gradient(65% 55% at 50% 0%, rgba(125, 51, 255, 0.16) 0%, rgba(247, 247, 249, 0) 100%);
+
+  /* Button Secondary (Light - Exact Swatches from Image 2) */
+  --btn-secondary-bg: #EFE9FC;    /* Button Secondary: EFE9FC */
+  --btn-secondary-text: #6C2BD9;  /* Button Secondary Text: 6C2BD9 */
+
+  /* Semantic Signal Tokens */
+  --signal-yes: #059669;          /* High-Contrast Emerald */
+  --signal-yes-soft: rgba(5, 150, 105, 0.12);
+  --signal-no: #E11D48;           /* High-Contrast Coral/Crimson */
+  --signal-no-soft: rgba(225, 29, 72, 0.12);
+  --signal-warn: #D97706;         /* Amber */
+  --signal-warn-soft: rgba(217, 119, 6, 0.12);
+  --signal-cyan: #0284C7;         /* Deep Forecast Sky */
+  --signal-cyan-soft: rgba(2, 132, 199, 0.12);
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px -2px rgba(20, 18, 35, 0.06), 0 0 0 1px rgba(226, 223, 236, 0.85);
+  --shadow-elevated: 0 6px 20px -2px rgba(20, 18, 35, 0.08);
+  --shadow-glow: 0 0 35px rgba(125, 51, 255, 0.18);
+}

@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/app", "destination": "/app.html" },
+    { "source": "/deep", "destination": "/deep.html" },
+    { "source": "/futarchy", "destination": "/futarchy.html" },
+    { "source": "/opportunity", "destination": "/opportunity.html" },
+    { "source": "/risk", "destination": "/risk.html" },
+    { "source": "/rationale", "destination": "/rationale.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
